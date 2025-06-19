@@ -1,0 +1,46 @@
+:root {
+    --light-yellow: rgb(254, 235, 157);
+}
+.header-top {
+    background-color: var(--light-yellow);
+    font-family: Arial, sans-serif;
+    padding: 2em 0;
+}
+.container90 {
+    width: 90%;
+    margin: auto;
+}
+.header-top-wrapper {
+    position: relative;
+    font-size: 0.652vw;
+    height: 4.5em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    width: 35%;
+}
+.header-support {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    height: 4.5em;
+}
+.icon-cus {
+    height: 4em;
+}
+.support-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+.support-text span {
+    font-weight: 400;
+}
+.support-text strong {
+    font-weight: 600;
+}
+
+
