@@ -12,42 +12,44 @@
     <header>
         <div class="header-top">
             <div class="container90">
-                <div class="header-top-wrapper">
+                <div class="header-top-wrapper border">
                     <a class="logo border" title="Maybi Ecommerce">
-                        <img class="logo-img border" src="img/logo.webp" alt="Logo Maybi">
+                        <img class="logo-img" src="img/logo.webp" alt="Logo Maybi">
                     </a>
-                    <div class="header-support border">
-                        <svg class="header-support__icon border"><use xlink:href="#icon-support"></use></svg>
-                        <div class="header-support__text border">
+                    <div class="header-support">
+                        <svg class="header-support__icon"><use xlink:href="#icon-support"></use></svg>
+                        <div class="header-support__text">
                             <span>24/7 SUPPORT</span>
                             <strong>+123 456 789</strong>
                         </div>
                     </div>
-                    <form class="header-search border">
-                        <div class="header-cates border">
+                    <form class="header-search">
+
+                        <div class="header-cates" id="header-cates">
                             <div class="header-cates__title">
-                                <span>Tất cả</span>
+                                <span id="header-cate-title">Tất cả</span>
                                 <svg class="header-cates__title__icon"><use xlink:href="#icon-down"></use></svg>
                             </div>
-                            <ul class="header-cates__dropdown border">
-                                <li>Jean</li>
-                                <li>Croptop</li>
-                                <li>Skirt</li>
-                                <li>Váy</li>
-                                <li>Jean</li>
-                                <li>Croptop</li>
-                                <li>Skirt</li>
-                                <li>Váy</li>
-                                <li>Jean</li>
-                                <li>Croptop</li>
-                                <li>Skirt</li>
-                                <li>Váy</li>
-                                <li>Jean</li>
-                                <li>Croptop</li>
-                                <li>Skirt</li>
-                                <li>Váy</li>
+                            <ul class="header-cates__dropdown">
+                                <li class="active">Tất cả</li>
+                                <li class="group">Đầm</li>
+                                <li>Đầm hai dây</li>
+                                <li>Đầm thun</li>
+                                <li>Đầm ôm</li>
+                                <li>Đầm xòe</li>
+                                <li class="group">Áo</li>
+                                <li>Áo croptop kiểu</li>
+                                <li>Áo croptop thun</li>
+                                <li>Áo blazer</li>
+                                <li>Áo hai dây</li>
+                                <li class="group">Váy & Quần</li>
+                                <li>Quần dài - Quần ngắn</li>
+                                <li>Chân váy</li>
+                                <li>Jeans</li>                                
                             </ul>
                         </div>
+
+
                         <input class="header-search__input" id="search-name" type="text" name="q" value="" placeholder="Bạn tìm gì...">  
                         <button type="button" class="header-search__button">
                             <svg class="header-search__icon"><use xlink:href="#icon-search"></use></svg> 
@@ -56,6 +58,54 @@
                     </form>  
                     
                 </div>
+            </div>
+        </div>
+        <div class="header-navbar">
+            <div class="container90 ">
+                <div class="menus-nabars border">
+
+                    <div class="menus-cates border">
+                        <div class="menu-cate">
+                            <h3 class="menu-cate__title">
+                                <svg class="menu-cate__title__icon"><use xlink:href="#icon-menu"></use></svg>
+                                <span>Danh mục</span>
+                            </h3>
+                            <svg class="menu-cate__icon"><use xlink:href="#icon-down"></use></svg>
+                        </div>
+                    
+                        <ul class="menu-cate__dropdown border">
+                            <li class="mega-menu border">
+                                <a href="#" class="mega-item border">
+                                    <svg class="mega-item_icon"><use xlink:href="#icon-arrow-right-line"></use></svg>
+                                    <span>Chương trình HOT</span>
+                                    <svg class="mega-item__rgt"><use xlink:href="#icon-down"></use></svg>
+                                </a>
+                            </li>
+                            <li class="mega-menu border">
+                                <a href="#" class="mega-item border">
+                                    <svg class="mega-item_icon"><use xlink:href="#icon-arrow-right-line"></use></svg>
+                                    <span>Voucher</span>
+                                    <svg class="mega-item__rgt"><use xlink:href="#icon-down"></use></svg>
+                                </a>
+                            </li>
+                            <li class="mega-menu border">
+                                <a href="#" class="mega-item border">
+                                    <svg class="mega-item_icon"><use xlink:href="#icon-arrow-right-line"></use></svg>
+                                    <span>Sản phẩm mới</span>
+                                    <svg class="mega-item__rgt"><use xlink:href="#icon-down"></use></svg>
+                                </a>
+                            </li>
+                             <li class="mega-menu border">
+                                <a href="#" class="mega-item border">
+                                    <svg class="mega-item_icon2"><use xlink:href="#function-line"></use></svg>
+                                    <span>Khác</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </header>
@@ -70,9 +120,17 @@
             </symbol>  
             <symbol id="icon-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M12 15.0006L7.75732 10.758L9.17154 9.34375L12 12.1722L14.8284 9.34375L16.2426 10.758L12 15.0006Z"></path>
-            </symbol>        
+            </symbol>  
+            <symbol id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+            </symbol> 
+            <symbol id="icon-arrow-right-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </symbol>  
+            <symbol id="function-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 4C3 3.44772 3.44772 3 4 3H10C10.5523 3 11 3.44772 11 4V10C11 10.5523 10.5523 11 10 11H4C3.44772 11 3 10.5523 3 10V4ZM3 14C3 13.4477 3.44772 13 4 13H10C10.5523 13 11 13.4477 11 14V20C11 20.5523 10.5523 21 10 21H4C3.44772 21 3 20.5523 3 20V14ZM13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V10C21 10.5523 20.5523 11 20 11H14C13.4477 11 13 10.5523 13 10V4ZM13 14C13 13.4477 13.4477 13 14 13H20C20.5523 13 21 13.4477 21 14V20C21 20.5523 20.5523 21 20 21H14C13.4477 21 13 20.5523 13 20V14ZM15 5V9H19V5H15ZM15 15V19H19V15H15ZM5 5V9H9V5H5ZM5 15V19H9V15H5Z"></path>
+            </symbol>   
         </defs>
     </svg>
-    
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
